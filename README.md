@@ -12,21 +12,21 @@ Below are code snippets and descriptions of code that I worked on with full file
 ### Creating a Comments Section
 This website required a comments section in which the users could write a review of the shows/performances. Some of the features involved were required to put in a shared cshtml partial view to be used by other team members. This section allowed me to get my bearings on the project and the MVC style involved. 
 
-  @model IEnumerable<TheatreCMS3.Areas.Blog.Models.Comment>
+    @model IEnumerable<TheatreCMS3.Areas.Blog.Models.Comment>
 
-  @{
-    ViewBag.Title = "Index";
-  }
+    @{
+      ViewBag.Title = "Index";
+    }
 
-  <h2>Index</h2>
+    <h2>Index</h2>
 
-  <p>
-    @Html.ActionLink("Create New", "Create")
-  </p>
+    <p>
+      @Html.ActionLink("Create New", "Create")
+    </p>
 
 
-  @Html.Partial("_Comments")
-  
+    @Html.Partial("_Comments")
+
         @model IEnumerable<TheatreCMS3.Areas.Blog.Models.Comment>
 
 
@@ -97,7 +97,7 @@ Another task assigned to me was using the like/dislike button with html and Razo
         input2.value = parseInt(input2.value) + 1;
       })
 
-  </script>
+    </script>
 
 *Jump to: [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories), [Page Top](#live-project)*
 
