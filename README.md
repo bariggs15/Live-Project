@@ -7,7 +7,7 @@ Below are code snippets and descriptions of code that I worked on with full file
 
 ## Back End Stories
 * [Creating a Comments Section](#Creating-a-Comments-Section)
-* [Like/Dislike Features](#Like/Dislike-Features)
+* [Like Dislike Features](#Like-Dislike-Features)
 
 ### Creating a Comments Section
 This website required a comments section in which the users could write a review of the shows/performances. Some of the features involved were required to put in a shared cshtml partial view to be used by other team members. This section allowed me to get my bearings on the project and the MVC style involved. 
@@ -82,20 +82,20 @@ Another task assigned to me was using the like/dislike button with html and Razo
 
       <div class="comment-reply">  @Html.ActionLink("Reply", "Reply", new { id = item.CommentID })</div>
     </div>
-  </div>
-  
-   <script type="text/javascript">
-    let likebtn = document.querySelector('#likebtn');
-    let dislikebtn = document.querySelector('#dislikebtn');
-    let input1 = document.querySelector('#input1');
-    let input2 = document.querySelector('#input2');
+    </div>
 
-    likebtn.addEventListener('click', () => {
-      input1.value = parseInt(input1.value) + 1;
-    })
-    dislikelikebtn.addEventListener('click', () => {
-      input2.value = parseInt(input2.value) + 1;
-    })
+     <script type="text/javascript">
+      let likebtn = document.querySelector('#likebtn');
+      let dislikebtn = document.querySelector('#dislikebtn');
+      let input1 = document.querySelector('#input1');
+      let input2 = document.querySelector('#input2');
+
+      likebtn.addEventListener('click', () => {
+        input1.value = parseInt(input1.value) + 1;
+      })
+      dislikelikebtn.addEventListener('click', () => {
+        input2.value = parseInt(input2.value) + 1;
+      })
 
   </script>
 
@@ -103,7 +103,7 @@ Another task assigned to me was using the like/dislike button with html and Razo
 
 ## Front End Stories
 * [Fixed Footer for Main Page](#Fixed-Footer)
-* [Formatted/Styled Comments Page](#Formatted/Styled-Comments-Page)
+* [Formatted and Styled Comments Page](#Formatted-and-Styled-Comments-Page)
 
 ### Fixed Footer for Main Page
 When I jumped in the project, one of the issues was the container for the footer was blocking much of the text on the main page. It was also not formatting properly based on screen size and layout. I utilized HTML and CSS to fix this issue.
